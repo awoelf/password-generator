@@ -24,51 +24,57 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <div class="settings-list">
-        <div class="pass-length">
-          <div class="settings-instructions">
-            <h4>Password Length</h4>
-            <p>Password must be between 8 and 128 characters. (Required)</p>
-          </div>
-          <textarea 
-            id="pass-length"
-            cols="10"
-            rows="1"
-            placeholder="# Chars"
-            minlength="1"
-            maxlength="3"
-            required
-          ></textarea>
-        </div>
-        <div class="settings-instructions">
-          <h4>Character Types</h4>
-          <p>At least one character type must be selected. (Required)</p>
-        </div>
+        <div class="settings">
           <form>
-            <div class="form-item">
-              <input type="checkbox" name="lowercase" id="lowercase">
-              <label for="lowercase">Lowercase</label>
+            <div>
+              <label class="description">
+                <h4>Password Length</h4>
+                <p>Password must be between 8 and 128 characters.</p>
+                <p id="pass-length-status">❌</p>
+              </label>
+              <input 
+                type="number" 
+                min="8"
+                max="128"
+                name="pass-length" 
+                id="pass-length" 
+                placeholder="8-128 characters"
+                required
+              >
             </div>
-            <div class="form-item">
-              <input type="checkbox" name="uppercase" id="uppercase">
-              <label for="uppercase">Uppercase</label>
-            </div>
-            <div class="form-item">
-              <input type="checkbox" name="numeric" id="numeric">
-              <label for="numeric">Numeric</label>
-            </div>
-            <div class="form-item">
-              <input type="checkbox" name="special" id="special">
-              <label for="special">Special characters</label>
+            <div id="checkbox-section">
+              <label class="description">
+                <h4>Character Types</h4>
+                <p>At least one character type must be selected.</p>
+                <p id="char-type-status">❌</p>
+              </label>
+              <div class="form-item">
+                <input type="checkbox" name="lowercase" id="lowercase" class="checkbox">
+                <label for="lowercase">Lowercase</label>
+              </div>
+              <div class="form-item">
+                <input type="checkbox" name="uppercase" id="uppercase" class="checkbox">
+                <label for="uppercase">Uppercase</label>
+              </div>
+              <div class="form-item">
+                <input type="checkbox" name="numeric" id="numeric" class="checkbox">
+                <label for="numeric">Numeric</label>
+              </div>
+              <div class="form-item">
+                <input type="checkbox" name="special" id="special" class="checkbox">
+                <label for="special">Special characters</label>
+              </div>
             </div>
           </form>
         </div>
         <div class="card-footer">
           <button id="settings" class="btn">Open Settings</button>
-          <button id="generate" class="btn" disabled="gray">Generate Password</button>
+          <button id="generate" class="btn" disabled="true">Generate Password</button>
+        </div>
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -25,7 +25,7 @@ p {
 
 form {
   margin-left: 20px;
-  margin-bottom: 30px;
+  padding-bottom: 10px;
   font-size: medium;
 }
 
@@ -66,7 +66,7 @@ header {
   min-height: 100px;
 }
 
-.card-footer {
+.card-footer, .settings-button {
   text-align: center;
 }
 
@@ -109,7 +109,7 @@ button[disabled] {
   float: right;
 }
 
-.settings-list {
+.settings {
   display: none;
 }
 
@@ -125,13 +125,7 @@ button[disabled] {
   border-bottom: 2px solid #c0c7cf;
 }
 
-.pass-length textarea {
-  resize: none;
-  height: 24px;
-  margin-left: 20px;
-}
-
-.settings-instructions {
+.description {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -160,6 +154,15 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+#char-type-status, #pass-length-status {
+  margin-left: 0;
+  font-size: large;
+}
+
+#checkbox-section {
+  margin: 20px 0;
 }
 
 @media (max-width: 690px) {
