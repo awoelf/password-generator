@@ -9,7 +9,6 @@ This is a password generator that allows the user to customize the length and ty
 * Uppercase, lowercase, numeric, and special characters
 * Generate endless passwords!
 
-
 ![screen-gif](https://raw.githubusercontent.com/awoelf/password-generator/main/Assets/unit3-challenge.gif)
 ## Geting Started
 Visit [this page](https://awoelf.github.io/password-generator/) to view the `index.html` in your browser.
