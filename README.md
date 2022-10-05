@@ -10,7 +10,7 @@ This is a password generator that allows the user to customize the length and ty
 * Generate endless passwords!
 
 
-![screen-gif](./assets/unit3-challenge.gif)
+![screen-gif](/assets/unit3-challenge.gif)
 ## Geting Started
 Visit [this page](https://awoelf.github.io/password-generator/) to view the `index.html` in your browser.
 ### Prerequisite
